@@ -11,10 +11,8 @@
 
 ## DHT Sensor Wiring
 
-For DHT11/DHT22 module:
-
 | Sensor Pin | Arduino UNO Q |
-|----------|----------------|
+|-----------|----------------|
 | VCC | 3.3V or 5V |
 | GND | GND |
 | DATA | D2 |
