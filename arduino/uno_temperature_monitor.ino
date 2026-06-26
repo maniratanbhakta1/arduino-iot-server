@@ -4,6 +4,8 @@
   Purpose: Send temperature data to cloud server
 */
 
+const SERVER_URL = "https://arduino-iot-server.onrender.com/data";
+
 void setup() {
   Serial.begin(9600);
   delay(1000);
@@ -15,11 +17,26 @@ void loop() {
   float temperature = 28.5;
   float humidity = 65.0;
 
-  Serial.print("Temperature: ");
-  Serial.println(temperature);
+  String jsonData = createJSON(temperature, humidity);
 
-  Serial.print("Humidity: ");
-  Serial.println(humidity);
+  Serial.println("JSON Data:");
+  Serial.println(jsonData);
+
+  // Later: sendToCloud(jsonData);
 
   delay(5000);
+}
+
+String createJSON(float temperature, float humidity) {
+  String json = "{";
+  json += "\"temperature\":";
+  json += temperature;
+  json += ",";
+  json += "\"humidity\":";
+  json += humidity;
+  json += ",";
+  json += "\"device\":\"UNO_Q\"";
+  json += "}";
+
+  return json;
 }
