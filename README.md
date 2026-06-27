@@ -1,6 +1,6 @@
 # Arduino IoT Temperature Monitoring System
 
-A cloud-based Internet of Things (IoT) project that monitors temperature and humidity using an Arduino UNO Q and displays the latest readings on a live web dashboard. The sensor data is transmitted to a cloud server hosted on Render through HTTP requests, allowing the dashboard to be accessed from anywhere with an internet connection.
+
 
 ---
 
