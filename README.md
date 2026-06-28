@@ -33,43 +33,43 @@
 ┌─────────────────────────────────────────────┐
 │              Device Layer                   │
 ├─────────────────────────────────────────────┤
-│ • Arduino UNO Q                            │
-│ • DHT11 / DHT22 Sensor                     │
-│ • Arduino Firmware (.ino)                  │
-│ • Built-in LED Matrix                      │
+│ • Arduino UNO Q                             │
+│ • DHT11 / DHT22 Sensor                      │
+│ • Arduino Firmware (.ino)                   │
+│ • Built-in LED Matrix                       │
 └─────────────────────────────────────────────┘
                     │
                     ▼
 ┌─────────────────────────────────────────────┐
-│           Communication Layer              │
+│           Communication Layer               │
 ├─────────────────────────────────────────────┤
-│ • Arduino App Lab                          │
-│ • sender.py (Python)                       │
-│ • HTTP Protocol (POST)                           │
-│ • REST API (GET)                                │
-│ • JSON Data Format                         │
+│ • Arduino App Lab                           │
+│ • sender.py (Python)                        │
+│ • HTTP Protocol (POST)                      │
+│ • REST API (GET)                            │
+│ • JSON Data Format                          │
 └─────────────────────────────────────────────┘
                     │
                     ▼
 ┌─────────────────────────────────────────────┐
-│               Cloud Layer                  │
+│               Cloud Layer                   │
 ├─────────────────────────────────────────────┤
-│ • Node.js                                  │
-│ • Express.js                               │
-│ • Render Cloud                             │
-│ • REST API Endpoints                       │
-│ • Latest Data Storage                      │
+│ • Node.js                                   │
+│ • Express.js                                │
+│ • Render Cloud                              │
+│ • REST API Endpoints                        │
+│ • Latest Data Storage                       │
 └─────────────────────────────────────────────┘
                     │
                     ▼
 ┌─────────────────────────────────────────────┐
-│            Presentation Layer              │
+│            Presentation Layer               │
 ├─────────────────────────────────────────────┤
-│ • HTML                                     │
-│ • CSS                                      │
-│ • JavaScript                               │
-│ • Live Dashboard                           │
-│ • Auto Refresh                             │
+│ • HTML                                      │
+│ • CSS                                       │
+│ • JavaScript                                │
+│ • Live Dashboard                            │
+│ • Auto Refresh                              │
 └─────────────────────────────────────────────┘
 ```
 
