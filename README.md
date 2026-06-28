@@ -45,8 +45,8 @@
 ├─────────────────────────────────────────────┤
 │ • Arduino App Lab                          │
 │ • sender.py (Python)                       │
-│ • HTTP Protocol                            │
-│ • REST API                                 │
+│ • HTTP Protocol (POST)                           │
+│ • REST API (GET)                                │
 │ • JSON Data Format                         │
 └─────────────────────────────────────────────┘
                     │
