@@ -52,11 +52,11 @@ void loop() {
   if (currentTime - lastSendTime >= SEND_INTERVAL) {
     lastSendTime = currentTime;
 
-    readSensor();
+    if (readSensor()) {
+      String jsonData = createJSON(temperature, humidity);
 
-    String jsonData = createJSON(temperature, humidity);
-
-    Serial.println(jsonData);
+      Serial.println(jsonData);
+    }
   }
 
   if (currentTime - lastScreenTime >= SCREEN_INTERVAL) {
@@ -66,18 +66,19 @@ void loop() {
   }
 }
 
-void readSensor() {
+bool readSensor() {
   float tempValue = dht.readTemperature();
   float humValue = dht.readHumidity();
 
   if (isnan(tempValue) || isnan(humValue)) {
     Serial.println("ERROR: Failed to read from DHT sensor");
     showText("ERR");
-    return;
+    return false;
   }
 
   temperature = tempValue;
   humidity = humValue;
+  return true;
 }
 
 String createJSON(float temp, float hum) {

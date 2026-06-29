@@ -51,14 +51,22 @@ h1 {
   color: #222222;
 }
 
-#status {
-  color: #16a34a;
-}
-
 #time {
   margin-top: 25px;
   color: #555555;
   font-size: 16px;
+}
+
+.waiting {
+  color: #ca8a04;
+}
+
+.online {
+  color: #16a34a;
+}
+
+.offline {
+  color: #dc2626;
 }
 
 @media (max-width: 650px) {
